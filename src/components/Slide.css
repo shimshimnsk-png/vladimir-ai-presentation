@@ -1,0 +1,132 @@
+.slide {
+  position: relative;
+  width: 1440px;
+  height: 900px;
+  flex: 0 0 auto;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 12% -6%, rgba(94, 230, 200, 0.10) 0%, transparent 42%),
+    radial-gradient(circle at 100% 100%, rgba(94, 230, 200, 0.06) 0%, transparent 38%),
+    var(--bg-void);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+}
+
+.slide--placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide--placeholder h1 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 40px;
+  letter-spacing: -0.01em;
+  color: var(--text-primary);
+}
+
+.slide__number {
+  position: absolute;
+  right: 40px;
+  bottom: 32px;
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: var(--text-tertiary);
+  pointer-events: none;
+  z-index: 6;
+}
+
+.slide__edge {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 88px;
+  display: flex;
+  align-items: center;
+  border: none;
+  background: none;
+  cursor: pointer;
+  z-index: 5;
+  color: var(--text-tertiary);
+  transition: color 0.15s ease, background 0.15s ease;
+}
+
+.slide__edge:hover,
+.slide__edge:focus-visible {
+  color: var(--accent);
+  background: linear-gradient(90deg, rgba(94, 230, 200, 0.06), transparent);
+}
+
+.slide__edge--prev {
+  left: 0;
+  justify-content: flex-start;
+  padding-left: 14px;
+}
+
+.slide__edge--next {
+  right: 0;
+  justify-content: flex-end;
+  padding-right: 14px;
+  background: none;
+}
+
+.slide__edge--next:hover,
+.slide__edge--next:focus-visible {
+  background: linear-gradient(270deg, rgba(94, 230, 200, 0.06), transparent);
+}
+
+.slide__chevron {
+  font-family: var(--font-display);
+  font-size: 22px;
+  line-height: 1;
+  opacity: 0.35;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.slide__edge:hover .slide__chevron,
+.slide__edge:focus-visible .slide__chevron {
+  opacity: 1;
+}
+
+.slide__edge--prev:hover .slide__chevron {
+  transform: translateX(-3px);
+}
+
+.slide__edge--next:hover .slide__chevron {
+  transform: translateX(3px);
+}
+
+.slide__dots {
+  position: absolute;
+  left: 50%;
+  bottom: 28px;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 6;
+}
+
+.slide__dot {
+  width: 6px;
+  height: 6px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: var(--border-strong);
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.15s ease, width 0.15s ease;
+}
+
+.slide__dot:hover {
+  background: var(--text-secondary);
+}
+
+.slide__dot--active {
+  width: 18px;
+  border-radius: 3px;
+  background: var(--accent);
+}
