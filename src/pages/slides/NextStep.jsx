@@ -26,7 +26,7 @@ const steps = [
 
 export default function NextStep() {
   return (
-    <Slide number="12" className="next-step">
+    <Slide number="14" className="next-step">
       <p className="next-step__eyebrow">Следующий шаг</p>
 
       <h1 className="next-step__title">Следующий шаг — диагностика текущих процессов</h1>

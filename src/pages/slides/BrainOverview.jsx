@@ -46,7 +46,7 @@ const cards = [
 
 export default function BrainOverview() {
   return (
-    <Slide number="09" className="brain-overview">
+    <Slide number="11" className="brain-overview">
       <p className="brain-overview__eyebrow">BRAIN</p>
 
       <h1 className="brain-overview__title">BRAIN — цифровой мозг бизнеса</h1>

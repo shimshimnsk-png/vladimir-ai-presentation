@@ -214,7 +214,7 @@ export default function Jarvis() {
   const previews = scenarios.filter((scenario) => scenario.key !== activeKey)
 
   return (
-    <Slide number="03" className="jarvis">
+    <Slide number="05" className="jarvis">
       <h1 className="jarvis__title">Личный AI-помощник в Telegram</h1>
       <p className="jarvis__subtitle">
         Предприниматель ставит задачи текстом или голосом и получает результат в привычном

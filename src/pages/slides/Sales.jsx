@@ -191,7 +191,7 @@ export default function Sales() {
   const ActiveMockup = mockups[activeKey]
 
   return (
-    <Slide number="05" className="sales">
+    <Slide number="07" className="sales">
       <p className="sales__eyebrow">Продажи</p>
 
       <h1 className="sales__title">AI-система поддержки и контроля продаж</h1>

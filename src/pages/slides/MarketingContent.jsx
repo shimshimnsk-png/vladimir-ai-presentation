@@ -65,7 +65,7 @@ export default function MarketingContent() {
   const active = directions.find((direction) => direction.key === activeKey)
 
   return (
-    <Slide number="04" className="marketing-content">
+    <Slide number="06" className="marketing-content">
       <p className="marketing-content__eyebrow">Маркетинг и контент</p>
 
       <h1 className="marketing-content__title">AI-система маркетинга и контента</h1>

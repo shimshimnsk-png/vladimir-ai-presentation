@@ -2,6 +2,8 @@ import { Routes, Route, Navigate } from 'react-router-dom'
 import Home from './pages/Home'
 import Cover from './pages/slides/Cover'
 import RemontPro from './pages/slides/RemontPro'
+import YristCase from './pages/slides/YristCase'
+import AiVnedreniya from './pages/slides/AiVnedreniya'
 import Jarvis from './pages/slides/Jarvis'
 import MarketingContent from './pages/slides/MarketingContent'
 import Sales from './pages/slides/Sales'
@@ -23,16 +25,18 @@ function App() {
 
       <Route path="/01-cover" element={<Cover />} />
       <Route path="/02-remont-pro" element={<RemontPro />} />
-      <Route path="/03-jarvis" element={<Jarvis />} />
-      <Route path="/04-marketing-content" element={<MarketingContent />} />
-      <Route path="/05-sales" element={<Sales />} />
-      <Route path="/06-agent-system" element={<AgentSystem />} />
-      <Route path="/07-ecosystem" element={<Ecosystem />} />
-      <Route path="/08-confidential" element={<Confidential />} />
-      <Route path="/09-brain-overview" element={<BrainOverview />} />
-      <Route path="/10-brain-dashboard" element={<BrainDashboard />} />
-      <Route path="/11-two-levels" element={<TwoLevels />} />
-      <Route path="/12-next-step" element={<NextStep />} />
+      <Route path="/03-yrist" element={<YristCase />} />
+      <Route path="/04-ai-vnedreniya" element={<AiVnedreniya />} />
+      <Route path="/05-jarvis" element={<Jarvis />} />
+      <Route path="/06-marketing-content" element={<MarketingContent />} />
+      <Route path="/07-sales" element={<Sales />} />
+      <Route path="/08-agent-system" element={<AgentSystem />} />
+      <Route path="/09-ecosystem" element={<Ecosystem />} />
+      <Route path="/10-confidential" element={<Confidential />} />
+      <Route path="/11-brain-overview" element={<BrainOverview />} />
+      <Route path="/12-brain-dashboard" element={<BrainDashboard />} />
+      <Route path="/13-two-levels" element={<TwoLevels />} />
+      <Route path="/14-next-step" element={<NextStep />} />
     </Routes>
   )
 }

@@ -3,7 +3,7 @@ import './Confidential.css'
 
 export default function Confidential() {
   return (
-    <Slide number="08" className="confidential">
+    <Slide number="10" className="confidential">
       <div className="confidential__mark" />
 
       <p className="confidential__eyebrow">Конфиденциально</p>

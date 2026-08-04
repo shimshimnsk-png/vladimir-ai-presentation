@@ -21,7 +21,7 @@ const roles = [
 
 export default function BrainDashboard() {
   return (
-    <Slide number="10" className="brain-dashboard">
+    <Slide number="12" className="brain-dashboard">
       <p className="brain-dashboard__eyebrow">Пример работы BRAIN</p>
       <h1 className="brain-dashboard__title">Что BRAIN может показывать собственнику</h1>
 

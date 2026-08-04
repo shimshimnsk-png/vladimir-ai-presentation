@@ -57,7 +57,7 @@ const ownerWidgets = [
 
 export default function AgentSystem() {
   return (
-    <Slide number="06" className="agent-system">
+    <Slide number="08" className="agent-system">
       <p className="agent-system__eyebrow">Агентская сеть</p>
 
       <h1 className="agent-system__title">Агентская система: от подключения до результата</h1>
