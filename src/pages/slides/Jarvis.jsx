@@ -223,9 +223,13 @@ export default function Jarvis() {
       <p className="jarvis__niches">
         Настроен под ваши направления: госзаказ · франшизы · недвижимость · стоматология
       </p>
+      <p className="status-caption jarvis__status-caption">
+        Примеры показывают возможные сценарии применения помощника в маркетинге, контенте,
+        продажах и работе с агентами
+      </p>
 
       <div className="jarvis__control-row">
-        <span className="jarvis__demo-tag">Демонстрационные сценарии работы AI-помощника</span>
+        <span className="status-badge">Демонстрация сценариев AI-помощника в Telegram</span>
 
         <div className="jarvis__tabs" role="tablist" aria-label="Сценарии переписки">
           {scenarios.map((scenario) => (
@@ -334,6 +338,10 @@ export default function Jarvis() {
           </div>
         </div>
       </div>
+
+      <p className="status-footnote jarvis__footnote">
+        Диалоги созданы для демонстрации возможных сценариев работы
+      </p>
     </Slide>
   )
 }

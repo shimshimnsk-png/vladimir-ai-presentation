@@ -38,7 +38,10 @@ export default function RemontPro() {
 
   return (
     <Slide number="02" className="remont-pro">
-      <p className="remont-pro__eyebrow">Пример реализованного проекта</p>
+      <div className="remont-pro__status-row">
+        <p className="remont-pro__eyebrow">Пример реализованного проекта</p>
+        <span className="status-badge">Разработанный MVP</span>
+      </div>
 
       <h1 className="remont-pro__title">
         «Ремонт Про» — пример готовой системы управления бизнесом
@@ -95,7 +98,10 @@ export default function RemontPro() {
           ))}
         </div>
 
-        <p className="remont-pro__caption">Готовый пример цифровизации внутренних процессов компании</p>
+        <p className="status-caption">
+          Спроектирована и разработана основная система: дашборд собственника, объекты,
+          сотрудники, задачи, оплаты и аналитика
+        </p>
       </div>
     </Slide>
   )

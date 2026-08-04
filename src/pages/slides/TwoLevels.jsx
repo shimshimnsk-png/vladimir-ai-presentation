@@ -46,7 +46,10 @@ const columns = [
 
 export default function TwoLevels() {
   return (
-    <Slide number="13" className="two-levels">
+    <Slide number="12" className="two-levels">
+      <div className="two-levels__status-row">
+        <span className="status-badge">Сравнение форматов AI-решений</span>
+      </div>
       <h1 className="two-levels__title">Два уровня использования AI в бизнесе</h1>
 
       <div className="two-levels__columns">
@@ -84,9 +87,8 @@ export default function TwoLevels() {
 
       <div className="two-levels__conclusion">
         <p>
-          Это не конкурирующие решения. Личный помощник решает ежедневные задачи предпринимателя, а
-          бизнес-система управляет процессами компании. При необходимости они могут быть связаны
-          между собой.
+          Это не конкурирующие решения: личный AI-помощник ускоряет ежедневную работу
+          предпринимателя, а комплексная система связывает и контролирует процессы компании.
         </p>
       </div>
 

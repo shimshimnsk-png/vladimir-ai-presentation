@@ -30,10 +30,13 @@ export default function AiVnedreniya() {
 
   return (
     <Slide number="04" className="ai-vnedreniya">
-      <p className="ai-vnedreniya__eyebrow">Пример реализованного проекта</p>
+      <div className="ai-vnedreniya__status-row">
+        <p className="ai-vnedreniya__eyebrow">Пример реализованного проекта</p>
+        <span className="status-badge">Разработанный интерактивный прототип</span>
+      </div>
 
       <h1 className="ai-vnedreniya__title">
-        «СамостоятельныеЗапуски» — лендинг и мини-анкета по подбору AI-решений
+        Внедрение AI — лендинг и интерактивный подбор решений
       </h1>
 
       <p className="ai-vnedreniya__subtitle">
@@ -76,7 +79,10 @@ export default function AiVnedreniya() {
           продвижению консалтинга, франшиз и других B2B-направлений
         </p>
 
-        <p className="ai-vnedreniya__caption">Собственная разработка</p>
+        <p className="status-caption">
+          Разработаны структура предложения, сегментация аудитории, интерфейс и логика
+          интерактивного подбора AI-решения
+        </p>
       </div>
     </Slide>
   )

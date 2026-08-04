@@ -4,6 +4,13 @@
   padding: 22px 64px 16px;
 }
 
+.ecosystem__status-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 6px;
+}
+
 .ecosystem__eyebrow {
   display: flex;
   align-items: center;
@@ -14,7 +21,12 @@
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--accent);
-  margin-bottom: 8px;
+}
+
+.ecosystem__status-caption {
+  font-size: 12px;
+  max-width: 900px;
+  margin-bottom: 10px;
 }
 
 .ecosystem__eyebrow::before {
@@ -42,7 +54,7 @@
   line-height: 1.4;
   color: var(--text-secondary);
   max-width: 980px;
-  margin-bottom: 18px;
+  margin-bottom: 4px;
 }
 
 /* Четыре модуля системы */

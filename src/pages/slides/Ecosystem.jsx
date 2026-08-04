@@ -3,22 +3,22 @@ import './Ecosystem.css'
 
 const modules = [
   {
-    tag: '03',
+    tag: '05',
     title: 'AI-помощник',
     desc: 'Личный AI-помощник в Telegram, который знает всё, что происходит в бизнесе',
   },
   {
-    tag: '04',
+    tag: '06',
     title: 'Маркетинг и контент',
     desc: 'Единый контент-план и материалы под каждую нишу',
   },
   {
-    tag: '05',
+    tag: '07',
     title: 'Продажи',
     desc: 'Заявки, скрипты и сопровождение сделок без потерь на каждом этапе',
   },
   {
-    tag: '06',
+    tag: '08',
     title: 'Агентская сеть',
     desc: 'Материалы, обучение, передача лидов и контроль вознаграждений',
   },
@@ -43,13 +43,20 @@ const benefits = [
 export default function Ecosystem() {
   return (
     <Slide number="09" className="ecosystem">
-      <p className="ecosystem__eyebrow">Единая система</p>
+      <div className="ecosystem__status-row">
+        <p className="ecosystem__eyebrow">Единая система</p>
+        <span className="status-badge">Концепция под задачи бизнеса Владимира</span>
+      </div>
 
       <h1 className="ecosystem__title">Не четыре инструмента — одна система вокруг бизнеса</h1>
 
       <p className="ecosystem__subtitle">
         AI-помощник, маркетинг и контент, продажи и агентская сеть работают на общих данных и
         передают друг другу результат
+      </p>
+      <p className="status-caption ecosystem__status-caption">
+        Финальная архитектура формируется после диагностики текущих процессов и используемых
+        инструментов
       </p>
 
       <div className="ecosystem__modules">

@@ -4,6 +4,13 @@
   padding: 20px 64px 12px;
 }
 
+.sales__status-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 6px;
+}
+
 .sales__eyebrow {
   display: flex;
   align-items: center;
@@ -14,7 +21,11 @@
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--accent);
-  margin-bottom: 8px;
+}
+
+.sales__status-caption {
+  font-size: 12px;
+  margin-bottom: 3px;
 }
 
 .sales__eyebrow::before {

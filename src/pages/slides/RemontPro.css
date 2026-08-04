@@ -4,6 +4,13 @@
   padding: 36px 64px 0;
 }
 
+.remont-pro__status-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 10px;
+}
+
 .remont-pro__eyebrow {
   display: flex;
   align-items: center;
@@ -14,7 +21,6 @@
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--accent);
-  margin-bottom: 10px;
 }
 
 .remont-pro__eyebrow::before {

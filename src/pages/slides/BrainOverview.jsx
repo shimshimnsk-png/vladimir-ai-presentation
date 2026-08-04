@@ -46,14 +46,21 @@ const cards = [
 
 export default function BrainOverview() {
   return (
-    <Slide number="11" className="brain-overview">
-      <p className="brain-overview__eyebrow">BRAIN</p>
+    <Slide number="10" className="brain-overview">
+      <div className="brain-overview__status-row">
+        <p className="brain-overview__eyebrow">BRAIN</p>
+        <span className="status-badge">Собственная AI-система в разработке</span>
+      </div>
 
       <h1 className="brain-overview__title">BRAIN — цифровой мозг бизнеса</h1>
 
       <p className="brain-overview__subtitle">
         Система, которая не просто выполняет поручения, а анализирует бизнес, определяет
         приоритеты и помогает собственнику принимать решения
+      </p>
+      <p className="status-caption brain-overview__status-caption">
+        BRAIN объединяет функции AI-маркетолога, контент-стратега, специалиста по продажам,
+        аналитика, финансиста и помощника собственника
       </p>
 
       <div className="brain-overview__quote">
@@ -77,6 +84,7 @@ export default function BrainOverview() {
         BRAIN разрабатывается как персональная система под задачи вашего бизнеса. Реализация идёт
         поэтапно: первыми подключаются направления с наибольшим эффектом
       </p>
+      <p className="brain-overview__footnote">Материалы представлены для персонального ознакомления</p>
     </Slide>
   )
 }

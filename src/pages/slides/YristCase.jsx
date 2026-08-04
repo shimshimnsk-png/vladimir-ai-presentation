@@ -24,7 +24,10 @@ export default function YristCase() {
 
   return (
     <Slide number="03" className="yrist-case">
-      <p className="yrist-case__eyebrow">Пример реализованного проекта</p>
+      <div className="yrist-case__status-row">
+        <p className="yrist-case__eyebrow">Пример реализованного проекта</p>
+        <span className="status-badge">Рабочий прототип цифрового сервиса</span>
+      </div>
 
       <h1 className="yrist-case__title">
         «Социальный юрист» — сервис подбора льгот, выплат и документов
@@ -63,6 +66,11 @@ export default function YristCase() {
           Система создана для юридического сервиса в сфере социальных льгот, но та же логика —
           пошаговый подбор решений, генерация документов и AI-сопровождение клиента — применима к
           консалтингу, госзаказу и работе с обращениями клиентов
+        </p>
+
+        <p className="status-caption">
+          Разработаны структура сервиса, пользовательские сценарии, интерфейс, подбор решений,
+          работа с документами и AI-сопровождение
         </p>
 
         <p className="yrist-case__caption">Показано с согласия владельца проекта</p>

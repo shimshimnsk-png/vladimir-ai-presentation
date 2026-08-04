@@ -4,6 +4,13 @@
   padding: 36px 64px 0;
 }
 
+.ai-vnedreniya__status-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 10px;
+}
+
 .ai-vnedreniya__eyebrow {
   display: flex;
   align-items: center;
@@ -14,7 +21,6 @@
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--accent);
-  margin-bottom: 10px;
 }
 
 .ai-vnedreniya__eyebrow::before {

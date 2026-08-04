@@ -4,6 +4,13 @@
   padding: 34px 64px 0;
 }
 
+.marketing-content__status-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 10px;
+}
+
 .marketing-content__eyebrow {
   display: flex;
   align-items: center;
@@ -14,7 +21,11 @@
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--accent);
-  margin-bottom: 10px;
+}
+
+.marketing-content__status-caption {
+  max-width: 900px;
+  margin-bottom: 12px;
 }
 
 .marketing-content__eyebrow::before {
@@ -42,7 +53,7 @@
   line-height: 1.5;
   color: var(--text-secondary);
   max-width: 900px;
-  margin-bottom: 18px;
+  margin-bottom: 6px;
 }
 
 .marketing-content__columns {

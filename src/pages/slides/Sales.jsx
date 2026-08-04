@@ -192,13 +192,20 @@ export default function Sales() {
 
   return (
     <Slide number="07" className="sales">
-      <p className="sales__eyebrow">Продажи</p>
+      <div className="sales__status-row">
+        <p className="sales__eyebrow">Продажи</p>
+        <span className="status-badge">Концепция под задачи бизнеса Владимира</span>
+      </div>
 
       <h1 className="sales__title">AI-система поддержки и контроля продаж</h1>
 
       <p className="sales__subtitle">
         Каждая заявка получает следующий шаг, а потенциальные клиенты не теряются после первого
         контакта
+      </p>
+      <p className="status-caption sales__status-caption">
+        Финальная архитектура формируется после диагностики текущих процессов и используемых
+        инструментов
       </p>
       <p className="sales__niches">
         Логика работает на всех направлениях: госзаказ · франшизы · недвижимость · стоматология

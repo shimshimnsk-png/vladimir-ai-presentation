@@ -9,7 +9,6 @@ import MarketingContent from './pages/slides/MarketingContent'
 import Sales from './pages/slides/Sales'
 import AgentSystem from './pages/slides/AgentSystem'
 import Ecosystem from './pages/slides/Ecosystem'
-import Confidential from './pages/slides/Confidential'
 import BrainOverview from './pages/slides/BrainOverview'
 import BrainDashboard from './pages/slides/BrainDashboard'
 import TwoLevels from './pages/slides/TwoLevels'
@@ -32,11 +31,10 @@ function App() {
       <Route path="/07-sales" element={<Sales />} />
       <Route path="/08-agent-system" element={<AgentSystem />} />
       <Route path="/09-ecosystem" element={<Ecosystem />} />
-      <Route path="/10-confidential" element={<Confidential />} />
-      <Route path="/11-brain-overview" element={<BrainOverview />} />
-      <Route path="/12-brain-dashboard" element={<BrainDashboard />} />
-      <Route path="/13-two-levels" element={<TwoLevels />} />
-      <Route path="/14-next-step" element={<NextStep />} />
+      <Route path="/10-brain-overview" element={<BrainOverview />} />
+      <Route path="/11-brain-dashboard" element={<BrainDashboard />} />
+      <Route path="/12-two-levels" element={<TwoLevels />} />
+      <Route path="/13-next-step" element={<NextStep />} />
     </Routes>
   )
 }

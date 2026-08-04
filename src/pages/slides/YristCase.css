@@ -4,6 +4,13 @@
   padding: 36px 64px 0;
 }
 
+.yrist-case__status-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 10px;
+}
+
 .yrist-case__eyebrow {
   display: flex;
   align-items: center;
@@ -14,7 +21,6 @@
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--accent);
-  margin-bottom: 10px;
 }
 
 .yrist-case__eyebrow::before {
@@ -177,6 +183,10 @@
   color: var(--text-secondary);
   max-width: 1120px;
   margin-bottom: 10px;
+}
+
+.yrist-case__footer .status-caption {
+  margin-bottom: 6px;
 }
 
 .yrist-case__caption {

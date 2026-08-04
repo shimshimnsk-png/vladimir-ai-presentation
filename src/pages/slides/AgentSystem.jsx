@@ -58,13 +58,20 @@ const ownerWidgets = [
 export default function AgentSystem() {
   return (
     <Slide number="08" className="agent-system">
-      <p className="agent-system__eyebrow">Агентская сеть</p>
+      <div className="agent-system__status-row">
+        <p className="agent-system__eyebrow">Агентская сеть</p>
+        <span className="status-badge">Концепция под задачи бизнеса Владимира</span>
+      </div>
 
       <h1 className="agent-system__title">Агентская система: от подключения до результата</h1>
 
       <p className="agent-system__subtitle">
         Единые материалы, обучение, передача клиентов, контроль активности и прозрачный расчёт
         вознаграждений
+      </p>
+      <p className="status-caption agent-system__status-caption">
+        Финальная архитектура формируется после диагностики текущих процессов и используемых
+        инструментов
       </p>
 
       <div className="agent-system__steps">
@@ -104,6 +111,7 @@ export default function AgentSystem() {
               </div>
             ))}
           </div>
+          <p className="agent-system__owner-note">Показатели приведены как демонстрационный пример</p>
         </div>
 
         <div className="agent-system__pitch">

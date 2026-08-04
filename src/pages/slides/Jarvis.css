@@ -29,7 +29,16 @@
   font-size: 12px;
   font-weight: 600;
   color: var(--accent);
+  margin-bottom: 4px;
+}
+
+.jarvis__status-caption {
+  max-width: 880px;
   margin-bottom: 10px;
+}
+
+.jarvis__footnote {
+  margin-top: 8px;
 }
 
 /* Строка управления: подпись demo + переключатели сценариев */

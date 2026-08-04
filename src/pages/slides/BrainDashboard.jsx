@@ -21,9 +21,16 @@ const roles = [
 
 export default function BrainDashboard() {
   return (
-    <Slide number="12" className="brain-dashboard">
-      <p className="brain-dashboard__eyebrow">Пример работы BRAIN</p>
+    <Slide number="11" className="brain-dashboard">
+      <div className="brain-dashboard__status-row">
+        <p className="brain-dashboard__eyebrow">Пример работы BRAIN</p>
+        <span className="status-badge">Собственная AI-система в разработке</span>
+      </div>
       <h1 className="brain-dashboard__title">Что BRAIN может показывать собственнику</h1>
+      <p className="status-caption brain-dashboard__status-caption">
+        BRAIN объединяет функции AI-маркетолога, контент-стратега, специалиста по продажам,
+        аналитика, финансиста и помощника собственника
+      </p>
 
       <div className="brain-dashboard__columns">
         <div className="brain-dashboard__panel">
@@ -43,7 +50,7 @@ export default function BrainDashboard() {
 
           <p className="brain-dashboard__disclaimer">
             Демонстрационные примеры возможных рекомендаций. Не являются реальными данными бизнеса
-            Владимира.
+            Владимира. Показатели на экране приведены как демонстрационный пример работы системы.
           </p>
         </div>
 
@@ -59,6 +66,8 @@ export default function BrainDashboard() {
           </div>
         </div>
       </div>
+
+      <p className="brain-dashboard__footnote">Материалы представлены для персонального ознакомления</p>
     </Slide>
   )
 }

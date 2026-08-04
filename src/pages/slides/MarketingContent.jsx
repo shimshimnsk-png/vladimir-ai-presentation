@@ -66,12 +66,19 @@ export default function MarketingContent() {
 
   return (
     <Slide number="06" className="marketing-content">
-      <p className="marketing-content__eyebrow">Маркетинг и контент</p>
+      <div className="marketing-content__status-row">
+        <p className="marketing-content__eyebrow">Маркетинг и контент</p>
+        <span className="status-badge">Концепция под задачи бизнеса Владимира</span>
+      </div>
 
       <h1 className="marketing-content__title">AI-система маркетинга и контента</h1>
 
       <p className="marketing-content__subtitle">
         От разрозненных публикаций к единой системе привлечения предпринимателей из разных ниш
+      </p>
+      <p className="status-caption marketing-content__status-caption">
+        Финальная архитектура формируется после диагностики текущих процессов и используемых
+        инструментов
       </p>
 
       <div className="marketing-content__columns">
