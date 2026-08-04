@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import Slide from '../../components/Slide'
 import './MarketingContent.css'
 
@@ -32,9 +33,37 @@ const chainSteps = [
   'Аналитика',
 ]
 
-const directions = ['Госзаказ', 'Франшизы', 'Недвижимость', 'Стоматология']
+const directions = [
+  {
+    key: 'gov',
+    label: 'Госзаказ',
+    format: 'Экспертный пост · Telegram-канал',
+    title: 'Как избежать типичных ошибок при участии в конкурсных процедурах',
+  },
+  {
+    key: 'franchise',
+    label: 'Франшизы',
+    format: 'Гайд · Email-рассылка',
+    title: 'На что обратить внимание перед покупкой франшизы',
+  },
+  {
+    key: 'realty',
+    label: 'Недвижимость',
+    format: 'Аналитика · Блог',
+    title: 'Что важно учитывать при выборе коммерческого объекта',
+  },
+  {
+    key: 'dental',
+    label: 'Стоматология',
+    format: 'Кейс · Telegram-канал',
+    title: 'Как выстроить понятный путь пациента в клинике',
+  },
+]
 
 export default function MarketingContent() {
+  const [activeKey, setActiveKey] = useState('gov')
+  const active = directions.find((direction) => direction.key === activeKey)
+
   return (
     <Slide number="04" className="marketing-content">
       <p className="marketing-content__eyebrow">Маркетинг и контент</p>
@@ -77,12 +106,36 @@ export default function MarketingContent() {
       </div>
 
       <div className="marketing-content__footer">
-        <div className="marketing-content__directions">
-          {directions.map((direction) => (
-            <span className="marketing-content__direction" key={direction}>
-              {direction}
-            </span>
-          ))}
+        <div className="marketing-content__demo">
+          <div className="marketing-content__tabs">
+            {directions.map((direction) => (
+              <button
+                type="button"
+                key={direction.key}
+                className={`marketing-content__tab ${
+                  direction.key === activeKey ? 'marketing-content__tab--active' : ''
+                }`}
+                onClick={() => setActiveKey(direction.key)}
+              >
+                {direction.label}
+              </button>
+            ))}
+          </div>
+
+          <div className="marketing-content__window">
+            <div className="marketing-content__window-bar">
+              <span className="marketing-content__window-dot" />
+              <span className="marketing-content__window-dot" />
+              <span className="marketing-content__window-dot" />
+              <span className="marketing-content__window-path">
+                AI-контент · направление «{active.label}»
+              </span>
+            </div>
+            <div className="marketing-content__window-body">
+              <span className="marketing-content__window-format">{active.format}</span>
+              <p className="marketing-content__window-title">{active.title}</p>
+            </div>
+          </div>
         </div>
 
         <p className="marketing-content__note">
