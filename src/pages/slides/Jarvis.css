@@ -1,0 +1,487 @@
+.jarvis {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 64px 50px;
+}
+
+.jarvis__title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 1.18;
+  letter-spacing: -0.01em;
+  color: var(--text-primary);
+  max-width: 1100px;
+  margin-bottom: 6px;
+}
+
+.jarvis__subtitle {
+  font-family: var(--font-body);
+  font-size: 13px;
+  line-height: 1.4;
+  color: var(--text-secondary);
+  max-width: 880px;
+  margin-bottom: 12px;
+}
+
+/* Строка управления: подпись demo + переключатели сценариев */
+
+.jarvis__control-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.jarvis__demo-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--accent);
+  background: var(--accent-dim);
+  border: 1px solid rgba(94, 230, 200, 0.3);
+  border-radius: 999px;
+  padding: 7px 14px;
+}
+
+.jarvis__demo-tag::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  flex: 0 0 auto;
+}
+
+.jarvis__tabs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.jarvis__tab {
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  background: var(--bg-panel);
+  border: 1px solid var(--border-subtle);
+  border-radius: 999px;
+  padding: 8px 18px;
+  cursor: pointer;
+  transition: color 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+}
+
+.jarvis__tab:hover {
+  color: var(--text-primary);
+  border-color: var(--border-strong);
+}
+
+.jarvis__tab--active {
+  color: var(--bg-void);
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+/* Тело слайда: крупный чат + превью */
+
+.jarvis__body {
+  display: flex;
+  gap: 18px;
+  flex: 1;
+  min-height: 0;
+}
+
+.jarvis__previews {
+  flex: 0 0 34%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 0;
+  min-height: 0;
+}
+
+/* Карточка чата — общие стили */
+
+.jarvis-chat {
+  --tg-bg-1: #0e1621;
+  --tg-bg-2: #1c2b3a;
+  --tg-header: #17212b;
+  --tg-out: #2b5278;
+  --tg-in: #1c2733;
+  --tg-text: #e8eef3;
+  --tg-text-dim: rgba(232, 238, 243, 0.55);
+  --tg-accent: #4ea4f6;
+  --tg-online: #4fd15f;
+
+  display: flex;
+  flex-direction: column;
+  border-radius: 18px;
+  border: 1px solid var(--border-subtle);
+  background: var(--tg-header);
+  overflow: hidden;
+  min-height: 0;
+}
+
+.jarvis-chat--main {
+  flex: 1;
+  min-width: 0;
+}
+
+.jarvis-chat--preview {
+  flex: 1;
+  width: 100%;
+  padding: 0;
+  cursor: pointer;
+  text-align: left;
+  font: inherit;
+  color: inherit;
+  transition: border-color 0.15s ease, transform 0.15s ease, background 0.15s ease;
+}
+
+.jarvis-chat--preview:hover,
+.jarvis-chat--preview:focus-visible {
+  border-color: var(--accent);
+  background: var(--bg-panel-raised);
+  transform: translateY(-2px);
+}
+
+.jarvis-chat__header {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  background: var(--tg-header);
+}
+
+.jarvis-chat__avatar {
+  flex: 0 0 auto;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 14px;
+  color: #ffffff;
+  background: var(--tg-accent);
+}
+
+.jarvis-chat__avatar--sm {
+  width: 26px;
+  height: 26px;
+  font-size: 12px;
+}
+
+.jarvis-chat__heading {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  min-width: 0;
+}
+
+.jarvis-chat__name {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--tg-text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.jarvis-chat__status {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--font-body);
+  font-size: 11px;
+  color: var(--tg-text-dim);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.jarvis-chat__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--tg-online);
+  flex: 0 0 auto;
+}
+
+.jarvis-chat__icons {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: var(--tg-text-dim);
+  flex: 0 0 auto;
+}
+
+.jarvis-chat__icons svg {
+  width: 17px;
+  height: 17px;
+}
+
+.jarvis-chat__hint {
+  margin-left: auto;
+  flex: 0 0 auto;
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-tertiary);
+  opacity: 0;
+  transition: opacity 0.15s ease, color 0.15s ease;
+}
+
+.jarvis-chat--preview:hover .jarvis-chat__hint,
+.jarvis-chat--preview:focus-visible .jarvis-chat__hint {
+  opacity: 1;
+  color: var(--accent);
+}
+
+/* Сообщения */
+
+.jarvis-chat__messages {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 14px 20px;
+  overflow: hidden;
+  background-color: var(--tg-bg-1);
+  background-image:
+    radial-gradient(circle at 12% -10%, rgba(78, 164, 246, 0.16) 0%, transparent 40%),
+    radial-gradient(circle at 100% 110%, rgba(78, 164, 246, 0.1) 0%, transparent 42%),
+    radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1.4px),
+    linear-gradient(165deg, var(--tg-bg-1) 0%, var(--tg-bg-2) 100%);
+  background-size: auto, auto, 24px 24px, auto;
+}
+
+.jarvis-chat__row {
+  display: flex;
+}
+
+.jarvis-chat__row--user {
+  justify-content: flex-end;
+}
+
+.jarvis-chat__row--jarvis {
+  justify-content: flex-start;
+}
+
+.jarvis-chat__bubble {
+  max-width: 82%;
+  border-radius: 16px;
+  padding: 11px 14px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.42;
+}
+
+.jarvis-chat__bubble p,
+.jarvis-chat__bubble .jarvis-chat__list {
+  margin: 0;
+}
+
+.jarvis-chat__bubble p:not(:first-child),
+.jarvis-chat__bubble .jarvis-chat__list:not(:first-child) {
+  margin-top: 7px;
+}
+
+.jarvis-chat__bubble--user {
+  background: var(--tg-out);
+  color: #ffffff;
+  border-bottom-right-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.jarvis-chat__bubble--jarvis {
+  background: var(--tg-in);
+  color: var(--tg-text);
+  border-bottom-left-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.jarvis-chat__list {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.jarvis-chat__list li {
+  font-size: 13.5px;
+  line-height: 1.35;
+  color: var(--tg-text-dim);
+}
+
+.jarvis-chat__time {
+  display: block;
+  margin-top: 5px;
+  font-family: var(--font-display);
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: right;
+}
+
+.jarvis-chat__bubble--jarvis .jarvis-chat__time {
+  color: var(--tg-text-dim);
+}
+
+.jarvis-chat__ticks {
+  color: #bfe4ff;
+}
+
+/* Теги-функции внутри сообщения Джарвиса */
+
+.jarvis-chat__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.jarvis-chat__tag {
+  font-family: var(--font-body);
+  font-size: 11.5px;
+  font-weight: 500;
+  color: #e8eef3;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
+  padding: 4px 11px;
+  white-space: nowrap;
+}
+
+/* Строка ввода сообщения (декоративная) */
+
+.jarvis-chat__inputbar {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 18px 12px;
+  padding: 7px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: var(--tg-in);
+  color: var(--tg-text-dim);
+}
+
+.jarvis-chat__inputbar svg {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 auto;
+}
+
+.jarvis-chat__inputbar-placeholder {
+  flex: 1;
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--tg-text-dim);
+}
+
+.jarvis-chat__inputbar-mic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--tg-accent);
+  color: #ffffff;
+  flex: 0 0 auto;
+}
+
+.jarvis-chat__inputbar-mic svg {
+  width: 15px;
+  height: 15px;
+}
+
+/* Компактный вид превью */
+
+.jarvis-chat__messages--preview {
+  gap: 8px;
+  padding: 14px 16px;
+}
+
+.jarvis-chat__messages--preview .jarvis-chat__bubble {
+  padding: 9px 12px;
+  font-size: 12.5px;
+  line-height: 1.4;
+}
+
+.jarvis-chat__messages--preview .jarvis-chat__bubble p {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.jarvis-chat__messages--preview .jarvis-chat__list {
+  display: none;
+}
+
+/* Закреплённое сообщение с функциями Джарвиса */
+
+.jarvis__pinned {
+  flex: 0 0 auto;
+  margin-top: 10px;
+  padding: 10px 18px;
+  border-radius: 16px;
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-panel);
+}
+
+.jarvis__pinned-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-display);
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 7px;
+}
+
+.jarvis__pinned-label svg {
+  width: 12px;
+  height: 12px;
+}
+
+.jarvis__pinned-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.jarvis__pinned-bubble {
+  flex: 1;
+  min-width: 0;
+  border-radius: 14px;
+  border-top-left-radius: 4px;
+  padding: 10px 14px;
+  background: #1c2733;
+}
+
+.jarvis__pinned-bubble p {
+  margin: 0 0 6px;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  color: #e8eef3;
+}
+
