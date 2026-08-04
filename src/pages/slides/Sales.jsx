@@ -213,6 +213,28 @@ export default function Sales() {
         </div>
       </div>
 
+      <div className="sales__compare">
+        <div className="sales__compare-col sales__compare-col--before">
+          <span className="sales__compare-title">Без AI-системы</span>
+          <ul>
+            <li>Заявка ждёт, пока менеджер найдёт время ответить</li>
+            <li>КП и скрипт собираются заново под каждого клиента</li>
+            <li>Клиент теряется после первого разговора</li>
+            <li>Собственник видит только общий итог, без причины</li>
+          </ul>
+        </div>
+        <span className="sales__compare-arrow">→</span>
+        <div className="sales__compare-col sales__compare-col--after">
+          <span className="sales__compare-title">С AI-системой</span>
+          <ul>
+            <li>Заявка сразу получает следующий шаг</li>
+            <li>Материалы собираются по шаблону за минуты</li>
+            <li>Система напоминает вернуть клиента в работу</li>
+            <li>Видно, на каком этапе и почему теряются сделки</li>
+          </ul>
+        </div>
+      </div>
+
       <div className="sales__footer">
         <div className="sales__automation">
           <span className="sales__automation-label">Что можно автоматизировать</span>

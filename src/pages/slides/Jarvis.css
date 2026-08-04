@@ -1,7 +1,7 @@
 .jarvis {
   display: flex;
   flex-direction: column;
-  padding: 24px 64px 50px;
+  padding: 20px 64px 48px;
 }
 
 .jarvis__title {
@@ -18,10 +18,18 @@
 .jarvis__subtitle {
   font-family: var(--font-body);
   font-size: 13px;
-  line-height: 1.4;
+  line-height: 1.35;
   color: var(--text-secondary);
   max-width: 880px;
-  margin-bottom: 12px;
+  margin-bottom: 4px;
+}
+
+.jarvis__niches {
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 10px;
 }
 
 /* Строка управления: подпись demo + переключатели сценариев */
@@ -31,7 +39,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .jarvis__demo-tag {
