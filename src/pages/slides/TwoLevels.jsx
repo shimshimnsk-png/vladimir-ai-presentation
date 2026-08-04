@@ -46,7 +46,7 @@ const columns = [
 
 export default function TwoLevels() {
   return (
-    <Slide number="12" className="two-levels">
+    <Slide number="11" className="two-levels">
       <h1 className="two-levels__title">Два уровня использования AI в бизнесе</h1>
 
       <div className="two-levels__columns">
