@@ -194,7 +194,7 @@ export default function Sales() {
     <Slide number="07" className="sales">
       <div className="sales__status-row">
         <p className="sales__eyebrow">Продажи</p>
-        <span className="status-badge">Концепция под задачи бизнеса Владимира</span>
+        <span className="status-badge">Концепция под задачи бизнеса Владимира Заморенова</span>
       </div>
 
       <h1 className="sales__title">AI-система поддержки и контроля продаж</h1>

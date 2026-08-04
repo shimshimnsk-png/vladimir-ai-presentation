@@ -60,7 +60,7 @@ export default function AgentSystem() {
     <Slide number="08" className="agent-system">
       <div className="agent-system__status-row">
         <p className="agent-system__eyebrow">Агентская сеть</p>
-        <span className="status-badge">Концепция под задачи бизнеса Владимира</span>
+        <span className="status-badge">Концепция под задачи бизнеса Владимира Заморенова</span>
       </div>
 
       <h1 className="agent-system__title">Агентская система: от подключения до результата</h1>

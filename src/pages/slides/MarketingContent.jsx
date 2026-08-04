@@ -68,7 +68,7 @@ export default function MarketingContent() {
     <Slide number="06" className="marketing-content">
       <div className="marketing-content__status-row">
         <p className="marketing-content__eyebrow">Маркетинг и контент</p>
-        <span className="status-badge">Концепция под задачи бизнеса Владимира</span>
+        <span className="status-badge">Концепция под задачи бизнеса Владимира Заморенова</span>
       </div>
 
       <h1 className="marketing-content__title">AI-система маркетинга и контента</h1>

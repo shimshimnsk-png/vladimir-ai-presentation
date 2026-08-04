@@ -45,7 +45,7 @@ export default function Ecosystem() {
     <Slide number="09" className="ecosystem">
       <div className="ecosystem__status-row">
         <p className="ecosystem__eyebrow">Единая система</p>
-        <span className="status-badge">Концепция под задачи бизнеса Владимира</span>
+        <span className="status-badge">Концепция под задачи бизнеса Владимира Заморенова</span>
       </div>
 
       <h1 className="ecosystem__title">Не четыре инструмента — одна система вокруг бизнеса</h1>
