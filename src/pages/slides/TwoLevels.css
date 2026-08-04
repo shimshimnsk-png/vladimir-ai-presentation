@@ -1,0 +1,216 @@
+.two-levels {
+  display: flex;
+  flex-direction: column;
+  padding: 36px 64px 46px;
+}
+
+.two-levels__title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  color: var(--text-primary);
+  text-align: center;
+  margin-bottom: 26px;
+}
+
+.two-levels__columns {
+  position: relative;
+  display: flex;
+  gap: 40px;
+  flex: 1;
+  min-height: 0;
+}
+
+.two-levels__divider {
+  position: absolute;
+  left: 50%;
+  top: 6px;
+  bottom: 6px;
+  width: 1px;
+  transform: translateX(-50%);
+  background: linear-gradient(
+    180deg,
+    transparent,
+    var(--border-strong) 20%,
+    var(--border-strong) 80%,
+    transparent
+  );
+}
+
+.two-levels-column {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 26px 30px;
+  border-radius: 16px;
+  background: var(--bg-panel);
+  border: 1px solid var(--border-subtle);
+}
+
+.two-levels-column__tag {
+  align-self: flex-start;
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  border: 1px solid rgba(94, 230, 200, 0.3);
+  border-radius: 999px;
+  padding: 5px 12px;
+  margin-bottom: 14px;
+}
+
+.two-levels-column__title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 1.25;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.two-levels-column__subtitle {
+  font-family: var(--font-body);
+  font-size: 13.5px;
+  line-height: 1.45;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+}
+
+/* Характеристики */
+
+.two-levels-column__rows {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px 0;
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+  margin-bottom: 20px;
+}
+
+.two-levels-column__row {
+  display: grid;
+  grid-template-columns: 118px 1fr;
+  gap: 12px;
+  align-items: baseline;
+}
+
+.two-levels-column__row-label {
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-tertiary);
+}
+
+.two-levels-column__row-value {
+  font-family: var(--font-body);
+  font-size: 13.5px;
+  line-height: 1.4;
+  color: var(--text-primary);
+}
+
+/* Основные задачи */
+
+.two-levels-column__tasks-label {
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-tertiary);
+  margin-bottom: 12px;
+}
+
+.two-levels-column__tasks {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px 16px;
+  list-style: none;
+  margin-bottom: 22px;
+}
+
+.two-levels-column__tasks li {
+  position: relative;
+  padding-left: 16px;
+  font-family: var(--font-body);
+  font-size: 13.5px;
+  line-height: 1.4;
+  color: var(--text-primary);
+}
+
+.two-levels-column__tasks li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+/* Результат */
+
+.two-levels-column__result {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 16px 18px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(94, 230, 200, 0.1), rgba(94, 230, 200, 0.02));
+  border: 1px solid rgba(94, 230, 200, 0.28);
+}
+
+.two-levels-column__result-label {
+  font-family: var(--font-display);
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.two-levels-column__result p {
+  font-family: var(--font-body);
+  font-size: 13.5px;
+  line-height: 1.45;
+  color: var(--text-primary);
+}
+
+/* Главный вывод и подпись */
+
+.two-levels__conclusion {
+  margin-top: 20px;
+  padding: 16px 32px;
+  border-radius: 14px;
+  background: var(--bg-panel-raised);
+  border: 1px solid var(--border-subtle);
+}
+
+.two-levels__conclusion p {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--text-primary);
+  text-align: center;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.two-levels__note {
+  margin-top: 12px;
+  font-family: var(--font-body);
+  font-size: 11.5px;
+  line-height: 1.4;
+  color: var(--text-tertiary);
+  text-align: center;
+}

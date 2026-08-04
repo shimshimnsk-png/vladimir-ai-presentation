@@ -1,0 +1,114 @@
+.brain-overview {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 64px 46px;
+}
+
+.brain-overview__eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+
+.brain-overview__eyebrow::before {
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.brain-overview__title {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 1.12;
+  letter-spacing: -0.01em;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.brain-overview__subtitle {
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--text-secondary);
+  max-width: 900px;
+  margin-bottom: 16px;
+}
+
+.brain-overview__quote {
+  padding: 16px 26px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, rgba(94, 230, 200, 0.12), rgba(94, 230, 200, 0.02));
+  border: 1px solid rgba(94, 230, 200, 0.3);
+  margin-bottom: 20px;
+}
+
+.brain-overview__quote p {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 15.5px;
+  line-height: 1.45;
+  color: var(--text-primary);
+}
+
+.brain-overview__grid {
+  flex: 1;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.brain-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  padding: 16px 18px;
+  border-radius: 14px;
+  background: var(--bg-panel);
+  border: 1px solid var(--border-subtle);
+}
+
+.brain-card__n {
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--text-tertiary);
+  margin-bottom: 2px;
+}
+
+.brain-card__title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 14.5px;
+  line-height: 1.25;
+  color: var(--text-primary);
+}
+
+.brain-card__desc {
+  font-family: var(--font-body);
+  font-size: 12px;
+  line-height: 1.42;
+  color: var(--text-secondary);
+}
+
+.brain-overview__note {
+  margin-top: 18px;
+  font-family: var(--font-body);
+  font-size: 11.5px;
+  line-height: 1.4;
+  color: var(--text-tertiary);
+  text-align: center;
+}

@@ -1,0 +1,171 @@
+.brain-dashboard {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 64px 46px;
+}
+
+.brain-dashboard__eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+
+.brain-dashboard__eyebrow::before {
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.brain-dashboard__title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  color: var(--text-primary);
+  margin-bottom: 26px;
+}
+
+.brain-dashboard__columns {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  gap: 24px;
+}
+
+/* Левая колонка: демонстрационный дашборд */
+
+.brain-dashboard__panel {
+  flex: 1.15;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 24px 28px;
+  border-radius: 16px;
+  background: var(--bg-panel);
+  border: 1px solid var(--border-subtle);
+}
+
+.brain-dashboard__panel-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.brain-dashboard__panel-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 4px var(--accent-dim);
+}
+
+.brain-dashboard__panel-head p {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 19px;
+  color: var(--text-primary);
+}
+
+.brain-dashboard__insights {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.brain-insight {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px 18px;
+  border-radius: 10px;
+  background: var(--bg-panel-raised);
+  border: 1px solid var(--border-subtle);
+}
+
+.brain-insight__mark {
+  flex: 0 0 auto;
+  width: 6px;
+  height: 6px;
+  margin-top: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.brain-insight p {
+  font-family: var(--font-body);
+  font-size: 13.5px;
+  line-height: 1.45;
+  color: var(--text-primary);
+}
+
+.brain-dashboard__disclaimer {
+  margin-top: 20px;
+  font-family: var(--font-body);
+  font-size: 11px;
+  line-height: 1.4;
+  color: var(--text-tertiary);
+}
+
+/* Правая колонка: AI-роли */
+
+.brain-dashboard__roles {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 24px 28px;
+  border-radius: 16px;
+  background: var(--bg-panel);
+  border: 1px solid var(--border-subtle);
+}
+
+.brain-dashboard__roles-head {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 19px;
+  color: var(--text-primary);
+  margin-bottom: 26px;
+}
+
+.brain-dashboard__roles-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.brain-role {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 22px 20px;
+  border-radius: 12px;
+  background: var(--bg-panel-raised);
+  border: 1px solid var(--border-subtle);
+}
+
+.brain-role__title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 14.5px;
+  color: var(--accent);
+}
+
+.brain-role__desc {
+  font-family: var(--font-body);
+  font-size: 12.5px;
+  line-height: 1.45;
+  color: var(--text-secondary);
+}
