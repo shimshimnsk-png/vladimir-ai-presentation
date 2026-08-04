@@ -6,6 +6,7 @@ import Jarvis from './pages/slides/Jarvis'
 import MarketingContent from './pages/slides/MarketingContent'
 import Sales from './pages/slides/Sales'
 import AgentSystem from './pages/slides/AgentSystem'
+import Ecosystem from './pages/slides/Ecosystem'
 import TwoLevels from './pages/slides/TwoLevels'
 import NextStep from './pages/slides/NextStep'
 
@@ -23,8 +24,9 @@ function App() {
       <Route path="/04-marketing-content" element={<MarketingContent />} />
       <Route path="/05-sales" element={<Sales />} />
       <Route path="/06-agent-system" element={<AgentSystem />} />
-      <Route path="/07-two-levels" element={<TwoLevels />} />
-      <Route path="/08-next-step" element={<NextStep />} />
+      <Route path="/07-ecosystem" element={<Ecosystem />} />
+      <Route path="/08-two-levels" element={<TwoLevels />} />
+      <Route path="/09-next-step" element={<NextStep />} />
     </Routes>
   )
 }

@@ -1,0 +1,292 @@
+.agent-system {
+  display: flex;
+  flex-direction: column;
+  padding: 22px 64px 16px;
+}
+
+.agent-system__eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+
+.agent-system__eyebrow::before {
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.agent-system__title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.14;
+  letter-spacing: -0.01em;
+  color: var(--text-primary);
+  max-width: 1150px;
+  margin-bottom: 6px;
+}
+
+.agent-system__subtitle {
+  font-family: var(--font-body);
+  font-size: 13px;
+  line-height: 1.4;
+  color: var(--text-secondary);
+  max-width: 980px;
+  margin-bottom: 18px;
+}
+
+/* Семь последовательных этапов */
+
+.agent-system__steps {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  margin-bottom: 18px;
+}
+
+.agent-step {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  min-width: 0;
+}
+
+.agent-step__card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+  min-width: 0;
+  height: 148px;
+  padding: 14px 14px 16px;
+  border-radius: 14px;
+  background: var(--bg-panel);
+  border: 1px solid var(--border-subtle);
+}
+
+.agent-step__number {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 13px;
+  color: var(--accent);
+  letter-spacing: 0.02em;
+}
+
+.agent-step__title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 12.5px;
+  line-height: 1.22;
+  color: var(--text-primary);
+}
+
+.agent-step__desc {
+  font-family: var(--font-body);
+  font-size: 10.5px;
+  line-height: 1.35;
+  color: var(--text-secondary);
+}
+
+.agent-step__arrow {
+  flex: 0 0 auto;
+  padding: 0 6px;
+  font-family: var(--font-display);
+  font-size: 14px;
+  color: var(--text-tertiary);
+}
+
+/* Что видит собственник + продающий блок */
+
+.agent-system__footer {
+  display: flex;
+  align-items: stretch;
+  gap: 16px;
+  flex: 1;
+  min-height: 0;
+}
+
+.agent-system__owner {
+  flex: 0 0 460px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  background: var(--bg-panel);
+  border: 1px solid var(--border-subtle);
+  overflow: hidden;
+}
+
+.agent-system__owner-bar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--border-subtle);
+  background: var(--bg-panel-raised);
+}
+
+.agent-system__owner-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--border-strong);
+}
+
+.agent-system__owner-path {
+  margin-left: 8px;
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-tertiary);
+  letter-spacing: 0.02em;
+}
+
+.agent-system__owner-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  padding: 16px;
+  align-content: center;
+}
+
+.agent-widget {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding: 11px 13px;
+  border-radius: 10px;
+  background: var(--bg-panel-raised);
+  border: 1px solid var(--border-subtle);
+}
+
+.agent-widget--wide {
+  grid-column: 1 / -1;
+}
+
+.agent-widget__badge {
+  align-self: flex-start;
+  font-family: var(--font-display);
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border-radius: 999px;
+  padding: 3px 9px;
+}
+
+.agent-widget--accent .agent-widget__badge {
+  color: var(--accent);
+  background: var(--accent-dim);
+}
+
+.agent-widget--neutral .agent-widget__badge {
+  color: var(--text-tertiary);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.agent-widget--warn .agent-widget__badge {
+  color: #f0b054;
+  background: rgba(240, 176, 84, 0.14);
+}
+
+.agent-widget__label {
+  font-family: var(--font-body);
+  font-size: 12.5px;
+  color: var(--text-primary);
+}
+
+.agent-widget__track {
+  display: block;
+  height: 5px;
+  border-radius: 3px;
+  background: var(--border-subtle);
+  overflow: hidden;
+}
+
+.agent-widget__fill {
+  display: block;
+  height: 100%;
+  border-radius: 3px;
+  background: linear-gradient(90deg, var(--accent-strong), var(--accent));
+}
+
+.agent-widget--warn .agent-widget__fill {
+  background: linear-gradient(90deg, #c98a3a, #f0b054);
+}
+
+.agent-widget--neutral .agent-widget__fill {
+  background: var(--text-tertiary);
+}
+
+.agent-system__pitch {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 14px;
+  padding: 26px 36px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(94, 230, 200, 0.1), rgba(94, 230, 200, 0.02));
+  border: 1px solid rgba(94, 230, 200, 0.25);
+}
+
+.agent-system__pitch-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--accent);
+}
+
+.agent-system__pitch-text {
+  font-family: var(--font-body);
+  font-size: 14.5px;
+  line-height: 1.65;
+  color: var(--text-primary);
+  max-width: 660px;
+}
+
+/* Пример рекомендации */
+
+.agent-system__recommendation {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 14px;
+  padding: 12px 20px;
+  border-radius: 12px;
+  border: 1px solid var(--border-subtle);
+  background: var(--accent-dim);
+}
+
+.agent-system__recommendation-tag {
+  flex: 0 0 auto;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  border: 1px solid var(--border-subtle);
+  border-radius: 999px;
+  padding: 6px 12px;
+  white-space: nowrap;
+}
+
+.agent-system__recommendation-text {
+  font-family: var(--font-body);
+  font-size: 13px;
+  line-height: 1.4;
+  color: var(--text-primary);
+  max-width: 1050px;
+}

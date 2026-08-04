@@ -1,0 +1,223 @@
+.ecosystem {
+  display: flex;
+  flex-direction: column;
+  padding: 22px 64px 16px;
+}
+
+.ecosystem__eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+
+.ecosystem__eyebrow::before {
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.ecosystem__title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.14;
+  letter-spacing: -0.01em;
+  color: var(--text-primary);
+  max-width: 1100px;
+  margin-bottom: 6px;
+}
+
+.ecosystem__subtitle {
+  font-family: var(--font-body);
+  font-size: 13.5px;
+  line-height: 1.4;
+  color: var(--text-secondary);
+  max-width: 980px;
+  margin-bottom: 18px;
+}
+
+/* Четыре модуля системы */
+
+.ecosystem__modules {
+  display: flex;
+  gap: 16px;
+}
+
+.ecosystem-module {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ecosystem-module__tag {
+  align-self: flex-start;
+  font-family: var(--font-display);
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-tertiary);
+  margin-bottom: 8px;
+}
+
+.ecosystem-module__title {
+  align-self: flex-start;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+}
+
+.ecosystem-module__desc {
+  align-self: flex-start;
+  font-family: var(--font-body);
+  font-size: 12px;
+  line-height: 1.4;
+  color: var(--text-secondary);
+}
+
+.ecosystem-module {
+  padding: 16px 18px 0;
+  border-radius: 14px;
+  background: var(--bg-panel);
+  border: 1px solid var(--border-subtle);
+}
+
+.ecosystem-module__link {
+  width: 1px;
+  height: 22px;
+  margin-top: 14px;
+  background: linear-gradient(180deg, var(--border-strong), var(--accent));
+}
+
+/* Единая база данных — центр системы */
+
+.ecosystem__hub {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 24px;
+  border-radius: 16px;
+  border: 1px solid rgba(94, 230, 200, 0.35);
+  background: linear-gradient(135deg, rgba(94, 230, 200, 0.12), rgba(94, 230, 200, 0.03));
+}
+
+.ecosystem__hub-label {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--accent);
+}
+
+.ecosystem__hub-chips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.ecosystem__chip {
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: var(--text-primary);
+  background: var(--bg-panel);
+  border: 1px solid var(--border-subtle);
+  border-radius: 999px;
+  padding: 6px 14px;
+  white-space: nowrap;
+}
+
+/* Итог: выгоды + закрывающая фраза */
+
+.ecosystem__footer {
+  display: flex;
+  align-items: stretch;
+  gap: 16px;
+  flex: 1;
+  min-height: 0;
+  margin-top: 18px;
+}
+
+.ecosystem__benefits {
+  flex: 1.3;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  align-content: center;
+}
+
+.ecosystem__benefit {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 22px 24px;
+  border-radius: 14px;
+  background: var(--bg-panel);
+  border: 1px solid var(--border-subtle);
+}
+
+.ecosystem__benefit-mark {
+  flex: 0 0 auto;
+  width: 8px;
+  height: 8px;
+  margin-top: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 4px var(--accent-dim);
+}
+
+.ecosystem__benefit p {
+  font-family: var(--font-body);
+  font-size: 14.5px;
+  line-height: 1.5;
+  color: var(--text-primary);
+}
+
+.ecosystem__closing {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  padding: 30px 40px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(94, 230, 200, 0.12), rgba(94, 230, 200, 0.02));
+  border: 1px solid rgba(94, 230, 200, 0.3);
+}
+
+.ecosystem__closing-tag {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  border: 1px solid var(--border-subtle);
+  border-radius: 999px;
+  padding: 6px 14px;
+}
+
+.ecosystem__closing p {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 1.5;
+  color: var(--text-primary);
+  text-align: center;
+  max-width: 460px;
+}

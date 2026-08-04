@@ -142,11 +142,19 @@ function DealMockup() {
   )
 }
 
+const lossReasons = [
+  'Клиент не получил быстрый ответ на обращение',
+  'Не было персонального предложения под его нишу',
+  'Пропущен повторный контакт после встречи',
+  'Не объяснена выгода именно для его бизнеса',
+]
+
 function AnalyticsMockup() {
   const stages = ['Обращение', 'Квалификация', 'Предложение', 'Сделка']
   return (
     <div className="sales-mock sales-mock--analytics">
       <div className="sales-mock__funnel">
+        <p className="sales-mock__col-title">Воронка по этапам</p>
         {stages.map((stage, index) => (
           <div className="sales-mock__funnel-row" key={stage}>
             <span className="sales-mock__funnel-label">{stage}</span>
@@ -157,8 +165,13 @@ function AnalyticsMockup() {
           </div>
         ))}
       </div>
-      <div className="sales-mock__insight">
-        Показывает этап с наибольшими потерями и помогает понять причину отказов
+      <div className="sales-mock__reasons">
+        <p className="sales-mock__col-title">Основные причины потерь</p>
+        <ul className="sales-mock__reasons-list">
+          {lossReasons.map((reason) => (
+            <li key={reason}>{reason}</li>
+          ))}
+        </ul>
       </div>
     </div>
   )
@@ -186,6 +199,9 @@ export default function Sales() {
       <p className="sales__subtitle">
         Каждая заявка получает следующий шаг, а потенциальные клиенты не теряются после первого
         контакта
+      </p>
+      <p className="sales__niches">
+        Логика работает на всех направлениях: госзаказ · франшизы · недвижимость · стоматология
       </p>
 
       <div className="sales__tabs" role="tablist" aria-label="Этапы воронки">
@@ -247,12 +263,21 @@ export default function Sales() {
           </div>
         </div>
 
-        <div className="sales__recommendation">
-          <span className="sales__recommendation-tag">Пример AI-рекомендации</span>
-          <p className="sales__recommendation-text">
-            «В 12 диалогах не было повторного контакта более семи дней. Рекомендуется вернуть
-            клиентов в работу и подготовить персональные сообщения»
-          </p>
+        <div className="sales__recommendations">
+          <div className="sales__recommendation">
+            <span className="sales__recommendation-tag">Пример AI-рекомендации</span>
+            <p className="sales__recommendation-text">
+              «12 диалогов без повторного контакта дольше семи дней — стоит вернуть клиентов в
+              работу и подготовить персональные сообщения»
+            </p>
+          </div>
+          <div className="sales__recommendation">
+            <span className="sales__recommendation-tag">Пример AI-рекомендации</span>
+            <p className="sales__recommendation-text">
+              «5 сделок встали на этапе предложения без объяснения причины — стоит уточнить у
+              клиента, что помешало принять решение»
+            </p>
+          </div>
         </div>
       </div>
     </Slide>

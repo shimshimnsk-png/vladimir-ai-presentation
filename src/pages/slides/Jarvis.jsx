@@ -215,7 +215,7 @@ export default function Jarvis() {
 
   return (
     <Slide number="03" className="jarvis">
-      <h1 className="jarvis__title">Джарвис — личный AI-помощник в Telegram</h1>
+      <h1 className="jarvis__title">Личный AI-помощник в Telegram</h1>
       <p className="jarvis__subtitle">
         Предприниматель ставит задачи текстом или голосом и получает результат в привычном
         мессенджере
@@ -246,12 +246,12 @@ export default function Jarvis() {
       <div className="jarvis__body">
         <div className="jarvis-chat jarvis-chat--main">
           <div className="jarvis-chat__header">
-            <span className="jarvis-chat__avatar">Д</span>
+            <span className="jarvis-chat__avatar">AI</span>
             <div className="jarvis-chat__heading">
-              <span className="jarvis-chat__name">Джарвис</span>
+              <span className="jarvis-chat__name">AI-помощник</span>
               <span className="jarvis-chat__status">
                 <span className="jarvis-chat__dot" />
-                AI-помощник · {active.status}
+                {active.status}
               </span>
             </div>
             <HeaderIcons />
@@ -287,7 +287,7 @@ export default function Jarvis() {
               onClick={() => setActiveKey(scenario.key)}
             >
               <div className="jarvis-chat__header">
-                <span className="jarvis-chat__avatar jarvis-chat__avatar--sm">Д</span>
+                <span className="jarvis-chat__avatar jarvis-chat__avatar--sm">AI</span>
                 <div className="jarvis-chat__heading">
                   <span className="jarvis-chat__name">{scenario.tab}</span>
                   <span className="jarvis-chat__status">
@@ -321,7 +321,7 @@ export default function Jarvis() {
           Закреплённое сообщение
         </span>
         <div className="jarvis__pinned-row">
-          <span className="jarvis-chat__avatar jarvis-chat__avatar--sm">Д</span>
+          <span className="jarvis-chat__avatar jarvis-chat__avatar--sm">AI</span>
           <div className="jarvis__pinned-bubble">
             <p>Коротко — вот что я умею:</p>
             <div className="jarvis-chat__tags">

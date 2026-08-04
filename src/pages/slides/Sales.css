@@ -1,7 +1,7 @@
 .sales {
   display: flex;
   flex-direction: column;
-  padding: 22px 64px 16px;
+  padding: 20px 64px 12px;
 }
 
 .sales__eyebrow {
@@ -42,7 +42,14 @@
   line-height: 1.35;
   color: var(--text-secondary);
   max-width: 900px;
-  margin-bottom: 10px;
+  margin-bottom: 4px;
+}
+
+.sales__niches {
+  font-family: var(--font-body);
+  font-size: 11.5px;
+  color: var(--text-tertiary);
+  margin-bottom: 8px;
 }
 
 /* Табы этапов воронки */
@@ -359,7 +366,25 @@
 
 /* Мокап: аналитика */
 
+.sales-mock--analytics {
+  flex-direction: row;
+  gap: 28px;
+  max-width: 900px;
+  align-items: flex-start;
+}
+
+.sales-mock__col-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-tertiary);
+  margin-bottom: 12px;
+}
+
 .sales-mock__funnel {
+  flex: 1;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -372,7 +397,7 @@
 }
 
 .sales-mock__funnel-label {
-  flex: 0 0 130px;
+  flex: 0 0 110px;
   font-family: var(--font-display);
   font-size: 12.5px;
   font-weight: 600;
@@ -385,12 +410,37 @@
   background: linear-gradient(90deg, var(--accent-strong), var(--accent));
 }
 
-.sales-mock__insight {
+.sales-mock__reasons {
+  flex: 1;
+  border-left: 1px solid var(--border-subtle);
+  padding-left: 28px;
+}
+
+.sales-mock__reasons-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sales-mock__reasons-list li {
+  position: relative;
+  padding-left: 16px;
   font-family: var(--font-body);
   font-size: 12.5px;
   line-height: 1.4;
-  color: var(--text-secondary);
-  padding-top: 2px;
+  color: var(--text-primary);
+}
+
+.sales-mock__reasons-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--accent);
 }
 
 /* Сравнение: без AI / с AI */
@@ -481,8 +531,8 @@
 .sales__footer {
   display: flex;
   flex-direction: column;
-  gap: 6px;
-  margin-top: 10px;
+  gap: 5px;
+  margin-top: 8px;
 }
 
 .sales__automation {
@@ -519,11 +569,18 @@
   white-space: nowrap;
 }
 
+.sales__recommendations {
+  display: flex;
+  gap: 10px;
+}
+
 .sales__recommendation {
+  flex: 1;
+  min-width: 0;
   display: flex;
   align-items: center;
-  gap: 16px;
-  padding: 10px 20px;
+  gap: 12px;
+  padding: 8px 16px;
   border-radius: 12px;
   border: 1px solid var(--border-subtle);
   background: var(--accent-dim);
@@ -545,8 +602,7 @@
 
 .sales__recommendation-text {
   font-family: var(--font-body);
-  font-size: 13px;
-  line-height: 1.4;
+  font-size: 12px;
+  line-height: 1.32;
   color: var(--text-primary);
-  max-width: 1000px;
 }
