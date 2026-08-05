@@ -48,7 +48,20 @@
   line-height: 1.5;
   color: var(--text-secondary);
   max-width: 880px;
-  margin-bottom: 16px;
+  margin-bottom: 4px;
+}
+
+.yrist-case__status-caption {
+  max-width: 1050px;
+  margin-bottom: 3px;
+}
+
+.yrist-case__niches {
+  font-family: var(--font-body);
+  font-size: 11.5px;
+  color: var(--text-tertiary);
+  max-width: 1050px;
+  margin-bottom: 14px;
 }
 
 .yrist-case__body {
@@ -173,20 +186,7 @@
 }
 
 .yrist-case__footer {
-  padding: 14px 0 22px;
-}
-
-.yrist-case__note {
-  font-family: var(--font-body);
-  font-size: 13px;
-  line-height: 1.45;
-  color: var(--text-secondary);
-  max-width: 1120px;
-  margin-bottom: 10px;
-}
-
-.yrist-case__footer .status-caption {
-  margin-bottom: 6px;
+  padding: 14px 0 48px;
 }
 
 .yrist-case__caption {

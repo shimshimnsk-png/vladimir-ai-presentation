@@ -25,7 +25,15 @@
 
 .marketing-content__status-caption {
   max-width: 900px;
-  margin-bottom: 12px;
+  margin-bottom: 3px;
+}
+
+.marketing-content__niches {
+  font-family: var(--font-body);
+  font-size: 11.5px;
+  color: var(--text-tertiary);
+  max-width: 1000px;
+  margin-bottom: 10px;
 }
 
 .marketing-content__eyebrow::before {
@@ -143,13 +151,12 @@
 }
 
 .marketing-content__footer {
-  padding-bottom: 44px;
+  padding-bottom: 48px;
 }
 
 .marketing-content__demo {
   display: flex;
   gap: 14px;
-  margin-bottom: 12px;
 }
 
 .marketing-content__tabs {
@@ -250,10 +257,3 @@
   max-width: 640px;
 }
 
-.marketing-content__note {
-  font-family: var(--font-body);
-  font-size: 12.5px;
-  line-height: 1.4;
-  color: var(--text-secondary);
-  max-width: 1000px;
-}

@@ -51,6 +51,11 @@ export default function RemontPro() {
         Клиенты, сотрудники, задачи, проекты, оплаты и аналитика собственника в едином
         пространстве
       </p>
+      <p className="status-caption remont-pro__status-caption">
+        Система создана для ремонтной компании, но сама логика может быть адаптирована под
+        бизнес-консалтинг, работу с клиентами, агентскую сеть, продажи и управление несколькими
+        направлениями
+      </p>
 
       <div className="remont-pro__body">
         <div className="remont-pro__main">
@@ -81,12 +86,6 @@ export default function RemontPro() {
       </div>
 
       <div className="remont-pro__footer">
-        <p className="remont-pro__note">
-          Система создана для ремонтной компании, но сама логика может быть адаптирована под
-          бизнес-консалтинг, работу с клиентами, агентскую сеть, продажи и управление
-          несколькими направлениями
-        </p>
-
         <div className="remont-pro__chain">
           {chainSteps.map((step, index) => (
             <span className="remont-pro__chain-item" key={step}>
@@ -97,11 +96,6 @@ export default function RemontPro() {
             </span>
           ))}
         </div>
-
-        <p className="status-caption">
-          Спроектирована и разработана основная система: дашборд собственника, объекты,
-          сотрудники, задачи, оплаты и аналитика
-        </p>
       </div>
     </Slide>
   )

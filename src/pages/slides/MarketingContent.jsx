@@ -80,6 +80,10 @@ export default function MarketingContent() {
         Финальная архитектура формируется после диагностики текущих процессов и используемых
         инструментов
       </p>
+      <p className="marketing-content__niches">
+        Для каждого направления формируются отдельные предложения, материалы и воронки — без
+        смешивания разных аудиторий
+      </p>
 
       <div className="marketing-content__columns">
         <div className="marketing-content__column">
@@ -144,11 +148,6 @@ export default function MarketingContent() {
             </div>
           </div>
         </div>
-
-        <p className="marketing-content__note">
-          Для каждого направления формируются отдельные предложения, материалы и воронки — без
-          смешивания разных аудиторий
-        </p>
       </div>
     </Slide>
   )

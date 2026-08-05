@@ -42,7 +42,7 @@ const benefits = [
 
 export default function Ecosystem() {
   return (
-    <Slide number="10" className="ecosystem">
+    <Slide number="11" className="ecosystem">
       <div className="ecosystem__status-row">
         <p className="ecosystem__eyebrow">Единая система</p>
         <span className="status-badge">Концепция под задачи бизнеса Владимира Заморенова</span>

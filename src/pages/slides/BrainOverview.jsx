@@ -46,7 +46,7 @@ const cards = [
 
 export default function BrainOverview() {
   return (
-    <Slide number="11" className="brain-overview">
+    <Slide number="12" className="brain-overview">
       <div className="brain-overview__status-row">
         <p className="brain-overview__eyebrow">BRAIN</p>
         <span className="status-badge">Собственная AI-система в разработке</span>

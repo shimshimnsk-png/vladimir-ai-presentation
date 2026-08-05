@@ -1,7 +1,7 @@
 .agent-system {
   display: flex;
   flex-direction: column;
-  padding: 22px 64px 16px;
+  padding: 22px 64px 46px;
 }
 
 .agent-system__status-row {

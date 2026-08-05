@@ -1,7 +1,7 @@
 .sales {
   display: flex;
   flex-direction: column;
-  padding: 20px 64px 12px;
+  padding: 20px 64px 40px;
 }
 
 .sales__status-row {

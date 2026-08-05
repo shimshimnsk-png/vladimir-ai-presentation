@@ -48,7 +48,12 @@
   line-height: 1.5;
   color: var(--text-secondary);
   max-width: 880px;
-  margin-bottom: 16px;
+  margin-bottom: 4px;
+}
+
+.remont-pro__status-caption {
+  max-width: 1000px;
+  margin-bottom: 14px;
 }
 
 .remont-pro__body {
@@ -181,16 +186,7 @@
 }
 
 .remont-pro__footer {
-  padding: 14px 0 22px;
-}
-
-.remont-pro__note {
-  font-family: var(--font-body);
-  font-size: 13px;
-  line-height: 1.45;
-  color: var(--text-secondary);
-  max-width: 1120px;
-  margin-bottom: 10px;
+  padding: 14px 0 48px;
 }
 
 .remont-pro__chain {
@@ -198,7 +194,6 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 8px;
-  margin-bottom: 8px;
 }
 
 .remont-pro__chain-item {
