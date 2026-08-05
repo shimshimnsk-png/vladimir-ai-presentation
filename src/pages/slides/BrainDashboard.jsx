@@ -67,7 +67,10 @@ export default function BrainDashboard() {
         </div>
       </div>
 
-      <p className="brain-dashboard__footnote">Материалы представлены для персонального ознакомления</p>
+      <p className="brain-dashboard__footnote">
+        Конфиденциально. Копирование, распространение и передача третьим лицам без согласия автора
+        запрещены.
+      </p>
     </Slide>
   )
 }
