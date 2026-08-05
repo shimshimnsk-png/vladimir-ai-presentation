@@ -197,6 +197,17 @@ export default function Sales() {
         <span className="status-badge">Концепция под задачи бизнеса Владимира Заморенова</span>
       </div>
 
+      <div className="sales__automation sales__automation--top">
+        <span className="sales__automation-label">Что можно автоматизировать</span>
+        <div className="sales__automation-chips">
+          {automationItems.map((item) => (
+            <span className="sales__chip" key={item}>
+              {item}
+            </span>
+          ))}
+        </div>
+      </div>
+
       <h1 className="sales__title">AI-система поддержки и контроля продаж</h1>
 
       <p className="sales__subtitle">
@@ -259,17 +270,6 @@ export default function Sales() {
       </div>
 
       <div className="sales__footer">
-        <div className="sales__automation">
-          <span className="sales__automation-label">Что можно автоматизировать</span>
-          <div className="sales__automation-chips">
-            {automationItems.map((item) => (
-              <span className="sales__chip" key={item}>
-                {item}
-              </span>
-            ))}
-          </div>
-        </div>
-
         <div className="sales__recommendations">
           <div className="sales__recommendation">
             <span className="sales__recommendation-tag">Пример AI-рекомендации</span>

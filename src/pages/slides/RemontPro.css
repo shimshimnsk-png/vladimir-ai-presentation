@@ -95,7 +95,7 @@
   font-size: 15px;
   color: var(--text-primary);
   padding: 12px 18px;
-  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
 }
 
 .remont-pro__cards {
@@ -161,7 +161,7 @@
   font-size: 13px;
   color: var(--text-primary);
   padding: 10px 14px;
-  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
   transition: color 0.15s ease;
 }
 

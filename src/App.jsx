@@ -7,6 +7,7 @@ import AiVnedreniya from './pages/slides/AiVnedreniya'
 import Jarvis from './pages/slides/Jarvis'
 import MarketingContent from './pages/slides/MarketingContent'
 import Sales from './pages/slides/Sales'
+import RopAssistant from './pages/slides/RopAssistant'
 import AgentSystem from './pages/slides/AgentSystem'
 import Ecosystem from './pages/slides/Ecosystem'
 import BrainOverview from './pages/slides/BrainOverview'
@@ -29,12 +30,13 @@ function App() {
       <Route path="/05-jarvis" element={<Jarvis />} />
       <Route path="/06-marketing-content" element={<MarketingContent />} />
       <Route path="/07-sales" element={<Sales />} />
-      <Route path="/08-agent-system" element={<AgentSystem />} />
-      <Route path="/09-ecosystem" element={<Ecosystem />} />
-      <Route path="/10-brain-overview" element={<BrainOverview />} />
-      <Route path="/11-brain-dashboard" element={<BrainDashboard />} />
-      <Route path="/12-two-levels" element={<TwoLevels />} />
-      <Route path="/13-next-step" element={<NextStep />} />
+      <Route path="/08-rop-assistant" element={<RopAssistant />} />
+      <Route path="/09-agent-system" element={<AgentSystem />} />
+      <Route path="/10-ecosystem" element={<Ecosystem />} />
+      <Route path="/11-brain-overview" element={<BrainOverview />} />
+      <Route path="/12-brain-dashboard" element={<BrainDashboard />} />
+      <Route path="/13-two-levels" element={<TwoLevels />} />
+      <Route path="/14-next-step" element={<NextStep />} />
     </Routes>
   )
 }

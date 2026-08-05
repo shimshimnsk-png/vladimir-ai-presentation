@@ -46,7 +46,7 @@ const columns = [
 
 export default function TwoLevels() {
   return (
-    <Slide number="12" className="two-levels">
+    <Slide number="13" className="two-levels">
       <div className="two-levels__status-row">
         <span className="status-badge">Сравнение форматов AI-решений</span>
       </div>

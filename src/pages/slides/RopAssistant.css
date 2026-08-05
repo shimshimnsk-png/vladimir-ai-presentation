@@ -1,0 +1,550 @@
+.rop-assistant {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 64px 12px;
+}
+
+.ra__status-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 6px;
+}
+
+.ra__eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.ra__eyebrow::before {
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.ra__title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.14;
+  letter-spacing: -0.01em;
+  color: var(--text-primary);
+  max-width: 1150px;
+  margin-bottom: 5px;
+}
+
+.ra__subtitle {
+  font-family: var(--font-body);
+  font-size: 12.5px;
+  line-height: 1.35;
+  color: var(--text-secondary);
+  max-width: 950px;
+  margin-bottom: 4px;
+}
+
+.ra__status-caption {
+  font-size: 12px;
+  margin-bottom: 3px;
+}
+
+.ra__niches {
+  font-family: var(--font-body);
+  font-size: 11.5px;
+  color: var(--text-tertiary);
+  margin-bottom: 8px;
+}
+
+/* Табы разделов */
+
+.ra__tabs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.ra__tab {
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  background: var(--bg-panel);
+  border: 1px solid var(--border-subtle);
+  border-radius: 999px;
+  padding: 7px 14px;
+  cursor: pointer;
+  transition: color 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+}
+
+.ra__tab:hover {
+  color: var(--text-primary);
+  border-color: var(--border-strong);
+}
+
+.ra__tab--active {
+  color: var(--bg-void);
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+/* Активный раздел */
+
+.ra__stage {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+  min-height: 0;
+}
+
+.ra__stage-info {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.ra__stage-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--text-primary);
+}
+
+.ra__stage-desc {
+  font-family: var(--font-body);
+  font-size: 12.5px;
+  line-height: 1.35;
+  color: var(--text-secondary);
+}
+
+.ra__stage-window {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  border-radius: 16px;
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-panel);
+  padding: 18px 36px;
+  overflow: hidden;
+}
+
+/* Общие элементы мокапов */
+
+.ra-mock {
+  width: 100%;
+  max-width: 860px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.ra-mock__label {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-tertiary);
+  margin-bottom: 4px;
+}
+
+.ra-mock__value {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 13.5px;
+  color: var(--text-primary);
+}
+
+.ra-mock__value--big {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.ra-mock__stat {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ra-mock__stat-label {
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-tertiary);
+}
+
+.ra-mock__stat-value {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 17px;
+  color: var(--text-primary);
+}
+
+.ra-mock__stat-value em {
+  font-style: normal;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-tertiary);
+}
+
+.ra-mock__stat-value--warn {
+  color: #e6b45e;
+}
+
+.ra-mock__stat-value--accent {
+  color: var(--accent);
+}
+
+.ra-mock__badge {
+  align-self: flex-start;
+  font-family: var(--font-display);
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--accent);
+  background: var(--accent-dim);
+  border: 1px solid rgba(94, 230, 200, 0.3);
+  border-radius: 999px;
+  padding: 5px 12px;
+}
+
+/* База знаний */
+
+.ra-mock--knowledge {
+  max-width: 640px;
+}
+
+.ra-mock__docs {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ra-mock__doc {
+  display: grid;
+  grid-template-columns: 90px 1fr auto;
+  align-items: center;
+  gap: 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-panel);
+  padding: 10px 14px;
+}
+
+.ra-mock__doc-tag {
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.ra-mock__doc-name {
+  font-family: var(--font-body);
+  font-size: 12.5px;
+  color: var(--text-primary);
+}
+
+.ra-mock__doc-status {
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+/* Загрузка встречи */
+
+.ra-mock--upload {
+  max-width: 700px;
+}
+
+.ra-mock__upload-options {
+  display: flex;
+  gap: 10px;
+}
+
+.ra-mock__upload-option {
+  flex: 1;
+  border-radius: 12px;
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-panel);
+  padding: 12px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ra-mock__upload-option--active {
+  border-color: var(--accent);
+  background: var(--accent-dim);
+}
+
+/* Общая карточка */
+
+.ra-mock__brief-card {
+  border-radius: 14px;
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-panel-raised);
+  padding: 22px 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.ra-mock__brief-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 17px;
+  color: var(--text-primary);
+}
+
+.ra-mock__brief-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 24px;
+}
+
+.ra-mock__brief-note {
+  font-family: var(--font-body);
+  font-size: 12.5px;
+  line-height: 1.45;
+  color: var(--text-secondary);
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 12px;
+}
+
+/* Отчёт */
+
+.ra-mock__report-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  border-radius: 12px;
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-panel-raised);
+  padding: 16px 20px;
+}
+
+.ra-mock__report-summary {
+  flex: 1;
+}
+
+.ra-mock__report-score {
+  flex: 0 0 auto;
+  text-align: right;
+}
+
+.ra-mock__report-score-value {
+  display: block;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 26px;
+  color: var(--accent);
+}
+
+.ra-mock__report-score-value em {
+  font-style: normal;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-tertiary);
+}
+
+.ra-mock__criteria {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.ra-mock__criteria-row {
+  display: grid;
+  grid-template-columns: 190px 1fr 34px;
+  align-items: center;
+  gap: 12px;
+}
+
+.ra-mock__criteria-label {
+  font-family: var(--font-body);
+  font-size: 12.5px;
+  color: var(--text-secondary);
+}
+
+.ra-mock__criteria-bar {
+  height: 8px;
+  border-radius: 999px;
+  background: var(--bg-panel-raised);
+  overflow: hidden;
+}
+
+.ra-mock__criteria-fill {
+  display: block;
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--accent-strong), var(--accent));
+}
+
+.ra-mock__criteria-value {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 12.5px;
+  color: var(--text-primary);
+  text-align: right;
+}
+
+.ra-mock__report-note {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(94, 230, 200, 0.3);
+  background: var(--accent-dim);
+  padding: 12px 18px;
+}
+
+.ra-mock__report-note-tag {
+  flex: 0 0 auto;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+  border: 1px solid rgba(94, 230, 200, 0.3);
+  border-radius: 999px;
+  padding: 6px 12px;
+  white-space: nowrap;
+}
+
+.ra-mock__report-note p {
+  font-family: var(--font-body);
+  font-size: 12.5px;
+  line-height: 1.35;
+  color: var(--text-primary);
+}
+
+/* Дашборд команды */
+
+.ra-mock__team-stats {
+  display: flex;
+  gap: 28px;
+  border-radius: 12px;
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-panel-raised);
+  padding: 16px 20px;
+}
+
+.ra-mock__team-table {
+  border-radius: 12px;
+  border: 1px solid var(--border-subtle);
+  overflow: hidden;
+}
+
+.ra-mock__team-head,
+.ra-mock__team-row {
+  display: grid;
+  grid-template-columns: 2.4fr 1fr 0.7fr 1.2fr 0.8fr;
+  gap: 10px;
+  padding: 10px 18px;
+  align-items: center;
+}
+
+.ra-mock__team-head {
+  background: var(--bg-panel-raised);
+  font-family: var(--font-display);
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text-tertiary);
+}
+
+.ra-mock__team-row {
+  border-top: 1px solid var(--border-subtle);
+  font-family: var(--font-body);
+  font-size: 12.5px;
+  color: var(--text-primary);
+}
+
+.ra-mock__team-name {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.ra-mock__team-name span:first-child {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.ra-mock__team-role {
+  font-size: 11px;
+  color: var(--text-tertiary);
+}
+
+.ra-mock__team-score {
+  font-family: var(--font-display);
+  font-weight: 700;
+}
+
+.ra-mock__team-trend {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--accent);
+}
+
+/* Футер («Что переносится в бизнесы Владимира») */
+
+.ra__footer {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.ra__footer--top {
+  margin-bottom: 10px;
+}
+
+.ra__footer-label {
+  flex: 0 0 auto;
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-tertiary);
+}
+
+.ra__footer-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.ra__chip {
+  font-family: var(--font-body);
+  font-size: 15px;
+  color: var(--text-secondary);
+  background: var(--bg-panel);
+  border: 1px solid var(--border-subtle);
+  border-radius: 999px;
+  padding: 7px 15px;
+  white-space: nowrap;
+}

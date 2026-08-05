@@ -54,10 +54,10 @@ export default function RemontPro() {
 
       <div className="remont-pro__body">
         <div className="remont-pro__main">
+          <p className="remont-pro__main-title">{active.title}</p>
           <div className="remont-pro__main-image">
             <img src={active.image} alt={active.title} />
           </div>
-          <p className="remont-pro__main-title">{active.title}</p>
         </div>
 
         <div className="remont-pro__cards">
@@ -68,13 +68,13 @@ export default function RemontPro() {
               key={view.key}
               onClick={() => setActiveKey(view.key)}
             >
-              <div className="remont-pro__card-image">
-                <img src={view.image} alt={view.title} />
-              </div>
               <p className="remont-pro__card-title">
                 <span>{view.title}</span>
                 <span className="remont-pro__card-hint">Открыть ↗</span>
               </p>
+              <div className="remont-pro__card-image">
+                <img src={view.image} alt={view.title} />
+              </div>
             </button>
           ))}
         </div>
